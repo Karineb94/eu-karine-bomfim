@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Karine Bomfim, estudante e desenvolvedora front-end em formação, com foco em HTML5, CSS3 e JavaScript." />
+  <title>Karine Bomfim | Dev Front-End</title>
+
+  <link rel="icon" href="favicon.ico" sizes="any" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">KB<span>.dev</span></a>
+
+      <button class="btn-menu-mobile" id="btnMenuMobile" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu de navegação">
+        <span class="linha-hamburguer"></span>
+        <span class="linha-hamburguer"></span>
+        <span class="linha-hamburguer"></span>
+      </button>
+
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#inicio">INÍCIO</a></li>
+        <li><a href="#estudos">APRENDIZADO</a></li>
+
+        <li class="nav-item-contato">
+          <button class="btn-contato" id="btnContato" aria-expanded="false" aria-controls="dropdownContato">
+            Fale Comigo <span class="seta-dropdown">▼</span>
+          </button>
+          <div class="dropdown-contato" id="dropdownContato">
+
+            <a href="mailto:bomfimkarine2@gmail.com" class="dropdown-item">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#EA4335" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <span>E-mail</span>
+            </a>
+
+            <a href="https://wa.me/5562981860861" target="_blank" rel="noopener" class="dropdown-item">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#25D366" d="M12.012 2c-5.508 0-9.989 4.478-9.99 9.984 0 1.763.459 3.483 1.332 5.001L2 22l5.127-1.333c1.464.799 3.113 1.217 4.881 1.217h.004c5.505 0 9.987-4.478 9.988-9.986 0-2.668-1.039-5.176-2.927-7.064C17.186 3.042 14.68 2 12.012 2z"/></svg>
+              <span>WhatsApp</span>
+            </a>
+
+            <a href="https://linkedin.com/in/karine-bomfim-b424431a4/" target="_blank" rel="noopener" class="dropdown-item">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#0A66C2" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9v8.37H9.25V10.9H6.46M7.86 6.72a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"/></svg>
+              <span>LinkedIn</span>
+            </a>
+
+            <a href="https://github.com/Karineb94" target="_blank" rel="noopener" class="dropdown-item">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#FFFFFF" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg>
+              <span>GitHub</span>
+            </a>
+
+            <a href="https://instagram.com/kaabomfim/" target="_blank" rel="noopener" class="dropdown-item">
+              <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="#E4405F" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+              <span>Instagram</span>
+            </a>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="inicio" class="hero-section">
+    <div class="hero-container">
+
+      <div class="hero-conteudo">
+
+        <div class="hero-topo">
+          <span class="badge-tech">&lt;FRONT-END IN TRAINING /&gt;</span>
+          <h1 class="hero-titulo">Olá, eu sou a<br> <span class="nome-destaque">Karine Bomfim</span></h1>
+
+          <div class="digitacao-box" aria-live="polite">
+            <span class="texto-digitado"></span><span class="cursor" aria-hidden="true">|</span>
+          </div>
+        </div>
+
+        <div class="jornada-card">
+          <div class="jornada-item">
+            <span class="jornada-icon" aria-hidden="true">💡</span>
+            <div>
+              <strong>Processo Atual:</strong>
+              <p>Construindo a base sólida em HTML5, CSS3 avançado e lógica com JavaScript.</p>
+            </div>
+          </div>
+          <div class="jornada-item">
+            <span class="jornada-icon" aria-hidden="true">🎯</span>
+            <div>
+              <strong>Próximo Passo:</strong>
+              <p>Evoluindo a cada linha de código para criar interfaces limpas, modernas e responsivas.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-base">
+          <p class="hero-descricao-destaque">
+            Estudante dedicada a transformar conceitos teóricos em código real, aprendendo na prática a construir experiências web funcionais e autênticas.
+          </p>
+
+          <div class="hero-botoes">
+            <a href="https://github.com/Karineb94" target="_blank" rel="noopener" class="btn-secundario">Ver GitHub</a>
+            <a href="https://linkedin.com/in/karine-bomfim-b424431a4/" target="_blank" rel="noopener" class="btn-primario">LinkedIn</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="hero-midia">
+        <div class="card-video-gta">
+          <span class="badge-live">APRESENTAÇÃO ✨</span>
+          <div class="video-wrapper">
+            <video autoplay loop muted playsinline class="video-preview" id="videoPreview">
+              <source src="./video.mp4" type="video/mp4" />
+              Seu navegador não suporta vídeos.
+            </video>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="estudos" class="skills-section">
+    <div class="skills-container">
+      <h2 class="secao-titulo">Meu Foco de <span>Estudos</span></h2>
+      <p class="secao-subtitulo">O que estou praticando e aplicando no dia a dia:</p>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="skill-icon" aria-hidden="true">⚡</span>
+          <h3>HTML5 & CSS3</h3>
+          <p>Estruturação semântica, layouts flexíveis com Flexbox/Grid e estilização focada em identidade visual moderna.</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon" aria-hidden="true">🚀</span>
+          <h3>JavaScript & Lógica</h3>
+          <p>Desenvolvendo raciocínio lógico, entendendo o funcionamento do DOM e dando vida a elementos interativos.</p>
+        </div>
+
+        <div class="skill-card">
+          <span class="skill-icon" aria-hidden="true">📱</span>
+          <h3>Design Responsivo</h3>
+          <p>Garantindo que os projetos se ajustem com harmonia e performance em diferentes tamanhos de tela.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="rodape">
+    <div class="rodape-container">
+      <div class="rodape-info">
+        <p>&copy; 2026 Karine Bomfim. Em constante evolução no Front-end.</p>
+        <p class="localizacao">📍 Goiânia, Goiás — Brasil</p>
+      </div>
+
+      <div class="redes-sociais">
+        <a href="mailto:bomfimkarine2@gmail.com">E-mail</a>
+        <a href="https://wa.me/5562981860861" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://github.com/Karineb94" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/karine-bomfim-b424431a4/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://instagram.com/kaabomfim/" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
